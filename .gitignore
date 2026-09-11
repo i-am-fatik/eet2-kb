@@ -1,0 +1,6 @@
+docs/CAEET_Playground_2026_v1.zip
+.DS_Store
+**/.DS_Store
+.mcp.json
+node_modules/
+kb/meta/retrieval-misses.md
