@@ -7,16 +7,23 @@ status: platne
 vydavatel: Generální finanční ředitelství
 verze_dokumentu: "1.0.0"
 soubor: docs/caeetapi_jwt.zip
-sha256: ed145a6ffb77a90b04a5e5bc396741ffc23d902ef54c0d9af0fa119b3c9ad8de
+sha256: c82cf6678f0c2ede416af1171fddcb661c37d11240f7837e213b9f5294eaec2c
 url: https://eet.gov.cz/assets/cs/cmsmedia/pro-vyvojare/caeetapi_jwt.zip
 tags: [openapi, jwt, certifikaty, obnova]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-10-11
 ---
 
 # CAEET API - JWT Token
 
 OpenAPI 3.1.0 specifikace integračního rozhraní certifikační autority pro automatizovanou obnovu pokladního certifikátu. Archiv obsahuje jediný soubor `caeetapi_jwt.yml`.
+
+## Historie verzí souboru
+
+| Staženo | Změna |
+|---|---|
+| 2026-09-11 | první stažení, servery bez prefixu `ca.` |
+| 2026-10-11 | vydavatel přepsal všechny tři base URL na `ca.`, `info.version` zůstal 1.0.0 a endpointy beze změny |
 
 Toto rozhraní je oddělené od SOAP rozhraní pro odesílání tržeb ([[wsdl]]) - řeší životní cyklus certifikátu, ne evidenci tržeb.
 
@@ -24,9 +31,9 @@ Toto rozhraní je oddělené od SOAP rozhraní pro odesílání tržeb ([[wsdl]]
 
 | Prostředí | URL |
 |---|---|
-| testovací | `https://test.caeet.gov.cz/api` |
-| zkušební | `https://zkus.caeet.gov.cz/api` |
-| produkční | `https://caeet.gov.cz/api` |
+| testovací | `https://ca.test.caeet.gov.cz/api` |
+| zkušební | `https://ca.zkus.caeet.gov.cz/api` |
+| produkční | `https://ca.caeet.gov.cz/api` |
 
 ## Endpointy
 

@@ -10,7 +10,7 @@ rests_on: [eet-cert-profil-pokladniho-certifikatu, eet-cert-vydani]
 tags: [obnova, api, jwt, rs256, pkcs12]
 aka: ["jak obnovit pokladni certifikat automaticky", "kdy mam zavolat renew", "co znamena stav INPROCESS", "jak se autorizuje volani ca eet api"]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-10-11
 ---
 
 # Automatizovaná obnova pokladního certifikátu přes API CA EET
@@ -36,9 +36,9 @@ Pro automatizovanou obnovu musí podle téže kapitoly pokladní systém impleme
 
 | Prostředí | URL |
 |---|---|
-| Testovací prostředí | `https://test.caeet.gov.cz/api` |
-| Zkušební prostředí | `https://zkus.caeet.gov.cz/api` |
-| Produkční prostředí | `https://caeet.gov.cz/api` |
+| Testovací prostředí | `https://ca.test.caeet.gov.cz/api` |
+| Zkušební prostředí | `https://ca.zkus.caeet.gov.cz/api` |
+| Produkční prostředí | `https://ca.caeet.gov.cz/api` |
 
 ## Endpointy
 
